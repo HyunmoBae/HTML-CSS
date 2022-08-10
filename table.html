@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 600px;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-radius: 10px;
+        /*border-collapse: collapse; 이중선 제거*/
+      }
+      th,
+      td {
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <caption>
+        주간 시간표
+      </caption>
+      <tr>
+        <th></th>
+        <th>월</th>
+        <th>화</th>
+        <th>수</th>
+        <th>목</th>
+        <th>금</th>
+      </tr>
+      <tr align="center">
+        <td>1교시</td>
+        <td colspan="2">HTML</td>
+        <td rowspan="3">JAVA</td>
+        <td>Python</td>
+        <td>PHP</td>
+      </tr>
+
+      <tr align="center">
+        <td>2교시</td>
+        <td>Node.js</td>
+        <td>CSS</td>
+        <td>JSP</td>
+        <td>Python</td>
+      </tr>
+
+      <tr align="center">
+        <td>3교시</td>
+        <td>C#</td>
+        <td>C#</td>
+        <td>HYML</td>
+        <td>JSP</td>
+      </tr>
+    </table>
+  </body>
+</html>
