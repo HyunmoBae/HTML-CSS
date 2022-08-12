@@ -7,7 +7,6 @@ if(isset($_POST['notice']) == NULL){
 } else{
     $notice = 1;
 }
-echo $notice;
 $name = $_POST['name'];
 $memo = $_POST['editor1'];
 $pass = $_POST['pass'];
