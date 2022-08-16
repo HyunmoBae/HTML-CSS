@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>위치</title>
+    <style>
+      p.static {
+        position: static;
+        left: 50px;
+        border: 3px solid black;
+      }
+      p.relative {
+        position: relative;
+        left: 50px;
+        border: 3px solid black;
+      }
+      p.fixed {
+        position: fixed;
+        width: 300px;
+        right: 0;
+        bottom: 0;
+        border: 3px solid black;
+      }
+      p.abs {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 10px;
+        border: 3px solid yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <!--static : 정적
+        relative : 상대
+        fixed : 고정
+        absolute : 상대-->
+    <h2>대구가톨릭대학교</h2>
+    <p class="static">대구가톨릭대학교는 대한민국 경상북도 경산시 및 대구광역시 중구, 남구에 소재하고 있는 사립 대학이다.</p>
+    <p class="relative">대구가톨릭대학교는 대한민국 경상북도 경산시 및 대구광역시 중구, 남구에 소재하고 있는 사립 대학이다.</p>
+    <p class="fixed">대구가톨릭대학교는 대한민국 경상북도 경산시 및 대구광역시 중구, 남구에 소재하고 있는 사립 대학이다.</p>
+    <p class="abs">대구가톨릭대학교는 대한민국 경상북도 경산시 및 대구광역시 중구, 남구에 소재하고 있는 사립 대학이다.</p>
+  </body>
+</html>
