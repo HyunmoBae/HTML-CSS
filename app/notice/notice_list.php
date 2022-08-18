@@ -45,7 +45,16 @@ $result = mysqli_query($con,$sql);
             <!-- 본문 내용 -->
             <div class="article-body">
               <div class="article-img">
-                <img src="../img/DCU.jpg" class="article-body-img" />
+                <?php
+                if($row['file']){
+                ?>
+                <img src="upload/<?php echo $row['file'];?>" class="article-body-img" />
+                <?php
+                } else {
+                ?>
+                <?php
+                }
+            ?>
               </div>
               <p>
                 <?php

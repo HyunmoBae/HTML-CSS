@@ -16,3 +16,8 @@ move_uploaded_file($tmpfile,$folder);
 $sql = "insert into notice (board_title,board_memo,board_date,board_hit,board_ip,file) values('".$title."','".$memo."','".$date."',0,'".$ip."','".$o_name."')";
 mysqli_query($con,$sql);
 ?>
+
+<script>
+    alert('공지글을 등록했습니다.');
+    location.href="notice_list.php";
+</script>
