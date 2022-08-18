@@ -36,32 +36,26 @@ $row = mysqli_fetch_array($result);
 
           <article>
             <!--본문 타이틀-->
-            <div  class="notice_write">
+            <div class="notice_write">
               <form method="post" action="notice_write_ok.php" enctype="multipart/form-data">
               <table>
                   <tr>
                       <td>제목</td>
-                      <?php echo $row['board_title']?>
-                      <td><input type="text" name="title" class="notice_write_title" placeholder="제목을 입력하세요"></td>
+                      <td class="notice_write_title"><?php echo $row['board_title']?></td>
                   </tr>
                   <tr>
                     <td>내용</td>
-                      <td colspan="2">
-                        <?php echo $row['board_memo'] ?>
-                        <textarea name="memo" rows="5" class="notice_write_memo" placeholder="내용을 입력하세요"></textarea>
+                      <td colspan="2" class="notice_write_memo">
+                          <?php echo $row['board_memo'] ?>
+                        </textarea>
                       </td>
                     </tr>
-                    <tr>
-                      <td class="notice_write_file">사진첨부</td>
-                      <td><input type="file" name="file" <?php echo $row['file'] ?>></td>
-                  </tr>
-                </table>
+                  </table>
+                  <tr>
+                    <td><img class="notice_view_file" src="upload/<?php echo $row['file'] ?>"></td>
+                </tr>
               </div>
           </article>
-
-          <div class="notice_btn">
-              <input type="submit" value="글등록" class="btn" />
-          </div>
           </form>
         </section>
         <!--본문 우측 영역-->

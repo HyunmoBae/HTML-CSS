@@ -41,7 +41,7 @@
                       </td>
                   </tr>
                   <tr>
-                      <td class="notice_write_file">사진첨부</td>
+                      <td class="notice_view_file">사진첨부</td>
                       <td><input type="file" name="file"></td>
                   </tr>
                 </table>
