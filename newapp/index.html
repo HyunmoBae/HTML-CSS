@@ -1,5 +1,5 @@
 <?php
-<!-- session_start(); -->
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,7 +23,7 @@
           <?php
           if(!isset($_SESSION['user_id'])){
             ?>
-          로그인
+          <a href="login.php">로그인</a> / <a href="member.html">회원가입</a>
           <?php
         } else {
             ?>
