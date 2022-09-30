@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .logo {
+        width: 200px;
+      }
+      #container {
+        width: 940px;
+        margin: 10px auto;
+        border: 1px solid #bcbcbc;
+        padding: 20px;
+      }
+      #header {
+        border: 1px solid #bcbcbc;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      #content {
+        width: 580px;
+        border: 1px solid #bcbcbc;
+        padding: 10px;
+        float: left;
+        margin-bottom: 20px;
+      }
+      #sidebar {
+        width: 260px;
+        border: 1px solid #bcbcbc;
+        padding: 20px;
+        float: right;
+      }
+      #footer {
+        clear: both; /*위의 float를 따라가지않음. */
+        border: 1px solid #bcbcbc;
+        padding: 20px;
+        text-align: center;
+      }
+      @media (max-width: 650px) {
+        .logo {
+          width: 35%;
+        }
+        #container {
+          width: auto;
+        }
+        #content {
+          width: auto;
+          float: none;
+        }
+        #sidebar {
+          width: auto;
+          float: none;
+          margin-bottom: 20px;
+        }
+      }
+      @media all and (min-width: 768px) and (max-width: 1080px) {
+        body {
+          background-color: red;
+        }
+      }
+      @media print and (min-width: 1080px) {
+        body {
+          background-color: yellow;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 전체 레이아웃-->
+    <div id="container">
+      <!-- 타이틀 부분 -->
+      <div id="header">
+        <img class="logo" src="../logo.png" />
+      </div>
+      <!-- 본문-->
+      <div id="content">
+        <h2>인사말</h2>
+        <p>
+          <대구가톨릭대학교에 늘 사랑과 응원을 보내주시는 여러분께 감사드립니다.
+          1914년, 우리는 영남 지역 최초의 대학을 세웠습니다. 나라를 빼앗겨
+          희망이 보이지 않았지만 우리는 절망과 체념에 빠져 있지 않았습니다. 이
+          땅의 젊은이들에게 가톨릭 정신에 기반한 진리를 가르쳤습니다.>
+        </p>
+      </div>
+
+      <div id="sidebar">
+        <h2>대학/대학원</h2>
+        <ul>
+          <li>일반대학원</li>
+          <li>교육대학원</li>
+          <li>예술대학원</li>
+        </ul>
+      </div>
+
+      <div id="footer">
+        <p>Copyright by Daegu Catholic University, all rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>
